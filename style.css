@@ -1,0 +1,152 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.411)), url(Team/see.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(4px); */
+}
+/* header */
+.header{
+    display: flex;
+    height: 60px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index:1000;
+    top: 0;
+    position: sticky;
+    padding: 0 200px;
+
+}
+.logo a{
+    font-size: 20px;
+    color: white;
+}
+span{
+    color: yellow;
+}
+.photography{
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.411)),url(Team/p1.JPG);
+    background-position: center,sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: grid; 
+}
+.er{
+    text-align: justify;
+    align-items: center;
+    border: 3px solid black;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+.photography h1{
+    text-align: center;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.774);
+    margin-top: 10px;
+    align-items: center;
+}
+.p{
+    font-size: 30px;
+}
+.tt{
+    margin-top: 60px;
+}
+.about{
+    display: inline-flex;
+}
+.head{
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.img1 img{
+    height: 350px;
+    max-width: 500px;
+    border: 1px solid;
+    border-radius: 30%;
+}
+.her{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.ig1{
+    text-align: justify;
+    align-items: center;
+    font-size: 25px;
+    margin: 50px 90px 90px 40px;
+}
+.pro{
+    background: rgba(0, 0, 0, 0.329);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+.prop{
+    display:inline-flex;
+}
+.pop img{
+    height: 100px;
+    width: 100px;
+    
+}
+.rich{
+    text-align: justify;
+    display: grid;
+}
+.rich h3{
+    font-size: 40px;
+}
+.rich p{
+    font-size: 35px;
+}
+.rich img{
+    height: 250px;
+}
+.rich a button{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.342);
+    color: rgba(0, 0, 0, 0.788);
+}
+button{
+    outline: none;
+    border: none;
+    height: 45px;
+    text-transform: capitalize;
+    width: 150px; 
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.905);
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+footer h3{
+    color: white;
+    border-bottom: 1px solid red;
+    font-size: larger;
+}
+.links ul li a{
+    color: white;
+    justify-content: space-around;
+}
+.Services ul li{
+    color: white;
+}
+.footer p{
+    color: white;
+}

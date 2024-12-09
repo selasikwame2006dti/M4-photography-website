@@ -1,0 +1,122 @@
+/* @import url('https:
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    height: 200vh;
+} */
+img:hover{
+    opacity: 0.9;
+
+}
+
+.header{
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;8
+}
+span{
+    color: yellow;
+}
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+/* body{
+    background-image: url(gobe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 60px;
+    color: white;
+} */
+.intro{
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb( 255, 255);
+    padding: 120px;
+    font: bolder;
+    background-color: rgb(0, 0, 0);
+    height: 20vh;
+       margin-bottom: 80px;
+    opacity: i;
+    color: white;
+}
+.mm{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+
+.mm p{ 
+    background-color: white;
+    width: 250px; 
+    margin-bottom:90px ;
+    text-align: center;
+    font-size:40px ;
+}
+img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+.image{
+    justify-content: center;
+    align-items: center;
+}footer{
+    background-color: rgba(0, 0, 0, 0.973);
+    padding: 5px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+footer h3{
+    color: white;
+    border-bottom: 1px solid red;
+    font-size: larger;
+}
+.links ul li a{
+    color: white;
+    justify-content: space-around;
+}
+.Services ul li{
+    color: white;
+}
+.footer p{
+    color: white;
+}
+button{
+    outline: none;
+    border: none;
+    height: 45px;
+    text-transform: capitalize;
+    width: 150px;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.two{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.three{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 10px;
+}

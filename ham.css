@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.head-in{
+    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.589)) ,url(hey.jpg                                                                                                                              );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    min-height: 90vh;
+    
+
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    background: rgba(41, 40, 40, 0.192);
+    z-index: 1;
+}
+.header nav{
+    display: flex;
+    padding: 0 100px;
+    height: 50px;
+    text-align: right;
+    align-items: center;
+    
+    
+
+}
+.logo a{
+    color:rgb(243, 239, 239);
+    font-size: 20px;
+    margin: 50px;
+}
+nav ul{
+    display: flex;
+    margin: 50px;
+    
+}
+nav ul li a{
+    margin: 20px;
+    color:rgb(247, 242, 242);
+    font-size: 15px;
+}

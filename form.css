@@ -1,0 +1,171 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+.header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+body{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.322)), url(Team/tet.jpg); */
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    /* min-height: 100vh; */
+}
+.logo a{
+    font-size: 50px;
+    font: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(247, 246, 246);
+}
+.form input{
+    background: rgb(245, 243, 243);
+}
+span{
+    color: yellow;
+}
+.input{
+    margin: 200px 550px 50px;
+}
+.container{
+    align-items: center;
+    margin-left: 300px;
+}
+.container input{
+    border: 1px solid;
+    border-radius: 6px;
+    height: 50px;
+    width:200px;
+}
+
+.image img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-left: 300px;
+}
+button{
+    outline: none;
+    border: none;
+    height: 45px;
+    text-transform: capitalize;
+    width: 150px; 
+}
+.container button{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.342);
+    color: rgba(0, 0, 0, 0.788);
+}
+p{
+    color: white;
+}
+
+
+
+/* form food */
+.form-in{
+    min-height: 70vh;
+}
+.flex{
+    /* min-height: 100vh; */
+    background: rgb(255, 255, 255);
+    height: 400px;
+    width: 700px;
+    position: relative;
+    display: flex;
+    top: 55px;
+    left: 350px;
+    box-shadow:8px 10px 60px 5px rgba(119, 116, 116, 0.678);
+}
+.img{
+    background: url(man1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+}
+/* editing form */
+.info{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+input{
+    height: 25px;
+    width: 200px;
+}
+@media(max-width:768px){
+    body{
+        font-size: 14px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
