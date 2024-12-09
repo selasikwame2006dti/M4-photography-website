@@ -89,7 +89,7 @@ p{
     box-shadow:8px 10px 60px 5px rgba(119, 116, 116, 0.678);
 }
 .img{
-    background: url(man1.jpg);
+    background: url(images/man1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

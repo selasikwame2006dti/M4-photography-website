@@ -8,7 +8,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 .head-in{
-    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.589)) ,url(hey.jpg                                                                                                                              );
+    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.589)) ,url(images/hey.jpg                                                                                                                              );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
