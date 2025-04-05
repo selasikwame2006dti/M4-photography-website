@@ -1,63 +1,276 @@
-.image {
-    text-align: center;
-    align-items: center;
-    margin: 200px;
-    color: white;
-    font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}    
- .image p{
-    text-align: center;
-    align-items: center;
-    margin: 0px;
-    color: rgba(199, 236, 241, 0.774);
-    font-size: 100px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-}  
-.image h1{
-    font-size: 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-footer{
-    background-color: rgb(0, 0, 0);
-    padding: 100px ;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.header {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
-footer h3{
+
+.logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+.logo span {
+    color: #f39c12;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 5px;
+}
+
+.nav-links li a {
+    color: #333;
+    font-size: 12px;
+    transition: color 0.3s ease;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.nav-links li a:hover {
+    color: #e74c3c;
+}
+
+.signin-btn {
+    background-color: #f39c12;
     color: white;
-    border-bottom: 1px solid red;
-    font-size: larger;
-}
-.links ul li a{
-    color: white;
-    justify-content: space-around;
-}
-.Services ul li{
-    color: white;
-}
-.footer p{
-    color: white;
-}
-.a{
+    padding: 5px 10px;
     border-radius: 5px;
-    width: 100px;
-    height: 40px;
-    border: none;
-
-
+    transition: background-color 0.3s ease;
+    font-size: 10px;
 }
-          
-.learn{
+
+.signin-btn:hover {
+    background-color: #e68a00;
+}
+
+
+article {
+    padding-top: 60px;
+}
+
+.photography {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.411)), url(Team/p1.JPG);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+.photography h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.774);
+    margin-top: 10px;
+}
+
+.tt {
+    margin-top: 60px;
+}
+
+.er {
+    text-align: justify;
+    border: 3px solid black;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    padding: 20px;
+}
+
+.head {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.ig1 {
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px;
+    max-width: 800px;
+}
+
+.her {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.pro {
+    background: rgba(0, 0, 0, 0.329);
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.prop {
+    display: flex;
+    justify-content: center;
+}
+
+.rich h3 {
+    font-size: 30px;
+}
+
+.rich p {
+    font-size: 20px;
+}
+
+.rich img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rich a button {
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.342);
+    color: rgba(0, 0, 0, 0.788);
+    padding: 10px 15px;
+}
+
+button {
+    outline: none;
+    border: none;
     height: 40px;
     width: 120px;
-    border: none;
-    background: rgb(255, 255, 255);
     cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-
 }
-.learn:hover{
-    background: rgba(255, 255, 255, 0.795);
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 8px;
+    color: #f39c12;
+}
+
+.footer-links li a {
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 12px;
+}
+
+.footer-links li a:hover {
+    color: #f39c12;
+}
+
+.footer-section p {
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 10px;
+    }
+
+    .nav-links li {
+        margin: 0 3px;
+    }
+
+    .nav-links li a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .signin-btn {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+
+    .photography h1 {
+        font-size: 40px;
+    }
+
+    .head {
+        font-size: 30px;
+    }
+
+    .her {
+        font-size: 30px;
+    }
+
+    .ig1 {
+        font-size: 16px;
+    }
+
+    .rich h3 {
+        font-size: 24px;
+    }
+
+    .rich p {
+        font-size: 16px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
 }
