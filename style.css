@@ -194,6 +194,23 @@ html{
         gap: 20px;
         padding: 20px 10px;
     }
+       .header {
+        padding: 10px 10px;
+    }
+
+    .nav-links li {
+        margin: 0 3px;
+    }
+
+    .nav-links li a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .signin-btn {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
 }
 
 @media (min-width: 769px) {
