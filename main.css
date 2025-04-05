@@ -43,6 +43,10 @@ body {
     color: #f39c12;
 }
 
+header li{
+    list-style-type:none;
+}
+
 .nav-links {
     display: flex;
 }
@@ -61,6 +65,7 @@ body {
     transition: color 0.3s ease;
     padding: 5px 8px;
     border-radius: 4px;
+    text-decoration:none;
 }
 
 .nav-links li a:hover {
@@ -79,8 +84,6 @@ body {
 .signin-btn:hover {
     background-color: #e68a00;
 }
-
-
 article {
     padding-top: 60px;
 }
