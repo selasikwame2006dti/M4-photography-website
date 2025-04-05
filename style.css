@@ -1,152 +1,208 @@
-*{
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-body{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.411)), url(Team/see.jpg); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* backdrop-filter: blur(4px); */
-}
-/* header */
-.header{
-    display: flex;
-    height: 60px;
-    background-color: black;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    z-index:1000;
-    top: 0;
-    position: sticky;
-    padding: 0 200px;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.logo a{
-    font-size: 20px;
-    color: white;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.6;
 }
-span{
-    color: yellow;
+
+html{
+    scroll-behavior: smooth;
 }
-.photography{
-    height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.411)),url(Team/p1.JPG);
-    background-position: center,sticky;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: grid; 
+    padding: 10px 15px; 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
-.er{
-    text-align: justify;
-    align-items: center;
-    border: 3px solid black;
-    margin-top: 100px;
-    margin-bottom: 300px;
+
+.logo a {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-.photography h1{
-    text-align: center;
-    font-size: 80px;
-    color: rgba(255, 255, 255, 0.774);
-    margin-top: 10px;
-    align-items: center;
+
+.logo span {
+    color: #f39c12;
 }
-.p{
-    font-size: 30px;
+
+.nav-links {
+    display: flex;
 }
-.tt{
-    margin-top: 60px;
-}
-.about{
-    display: inline-flex;
-}
-.head{
-    font-size: 70px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.img1 img{
-    height: 350px;
-    max-width: 500px;
-    border: 1px solid;
-    border-radius: 30%;
-}
-.her{
-    text-align: center;
-    align-items: center;
-    font-size: 50px;
-    margin-bottom: 60px;
-}
-.ig1{
-    text-align: justify;
-    align-items: center;
-    font-size: 25px;
-    margin: 50px 90px 90px 40px;
-}
-.pro{
-    background: rgba(0, 0, 0, 0.329);
-    align-items: center;
-    text-align: center;
-    margin-bottom: 60px;
-    margin-top: 50px;
-}
-.prop{
-    display:inline-flex;
-}
-.pop img{
-    height: 100px;
-    width: 100px;
+
+.nav-links ul {
+    display: flex;
     
 }
-.rich{
-    text-align: justify;
-    display: grid;
+
+.nav-links li {
+list-style-type:  none;
+    margin: 0 5px; 
 }
-.rich h3{
-    font-size: 40px;
+
+.nav-links li a {
+    color: #333;
+    font-size: 12px; 
+    transition: color 0.3s ease;
+    padding: 5px 8px; 
+    border-radius: 4px;
+    text-decoration:none;
 }
-.rich p{
-    font-size: 35px;
+
+.nav-links li a:hover {
+    color: #e74c3c;
 }
-.rich img{
-    height: 250px;
+
+.signin-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 10px; 
+    text-decoration:  none;
+    
 }
-.rich a button{
-    font-size: 15px;
-    background: rgba(255, 255, 255, 0.342);
-    color: rgba(0, 0, 0, 0.788);
+
+.signin-btn:hover {
+    background-color: #e68a00;
 }
-button{
-    outline: none;
-    border: none;
-    height: 45px;
-    text-transform: capitalize;
-    width: 150px; 
-}
-footer{
-    background-color: rgba(0, 0, 0, 0.905);
-    padding: 5px 0;
+
+
+.head-in {
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.589)), url(images/hey.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    min-height: 90vh;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; 
 }
-footer h3{
+
+.image {
+    text-align: center;
     color: white;
-    border-bottom: 1px solid red;
-    font-size: larger;
+    padding: 0 10px; 
 }
-.links ul li a{
-    color: white;
-    justify-content: space-around;
+
+.image h1 {
+    font-size: 30px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px; 
 }
-.Services ul li{
-    color: white;
+
+.image p.head {
+    color: rgba(199, 236, 241, 0.774);
+    font-size: 50px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px; 
 }
-.footer p{
+
+.learn {
+    height: 30px; 
+    width: 100px; 
+    border: none;
+    
+    cursor: pointer;
+    
+    font-size: 12px;
+    padding: 8px 15px; 
+    background-color: #e74c3c;
     color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.learn:hover {
+    background: rgba(255, 255, 255, 0.795);
+}
+
+
+.end {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.end h3 {
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.end ul {
+    padding-left: 0;
+}
+
+.end ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.end ul li i {
+    margin-right: 8px;
+    color: #f39c12;
+}
+
+.end ul li a {
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 12px;
+}
+
+.end ul li a:hover {
+    color: #f39c12;
+}
+
+.end p {
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+
+@media (max-width: 768px) {
+    .end {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .end {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        padding: 30px 20px;
+    }
 }
