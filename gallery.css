@@ -1,55 +1,203 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
+    box-sizing: border-box;
 }
-body::-webkit-scrollbar{
-    display: none;
-}
-.head-in{
-    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.589)) ,url(images/hey.jpg                                                                                                                              );
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(3px);
-    min-height: 90vh;
-    
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.6;
 }
-.header{
+
+.header {
     display: flex;
-    justify-content: space-around;
-    backdrop-filter: blur(10px);
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
+    padding: 15px 20px; 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    background: rgba(41, 40, 40, 0.192);
-    z-index: 1;
+    z-index: 100;
 }
-.header nav{
-    display: flex;
-    padding: 0 100px;
-    height: 50px;
-    text-align: right;
-    align-items: center;
-    
-    
 
+.logo a {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-.logo a{
-    color:rgb(243, 239, 239);
-    font-size: 20px;
-    margin: 50px;
+
+.logo span {
+    color: #f39c12;
 }
-nav ul{
+
+.nav-links {
+    list-style: none;
     display: flex;
-    margin: 50px;
-    
 }
-nav ul li a{
-    margin: 20px;
-    color:rgb(247, 242, 242);
-    font-size: 15px;
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px; 
+    font-size: 14px; 
+    transition: color 0.3s ease;
+    padding: 6px 10px; 
+    border-radius: 4px;
+}
+
+.nav-links li a:hover {
+    color: #e74c3c;
+}
+
+.signin-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 6px 12px; 
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 12px; 
+}
+
+.signin-btn:hover {
+    background-color: #e68a00;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Team/hey.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.view-gallery-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.view-gallery-btn:hover {
+    background-color: #c0392b;
+}
+
+.gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+    color: #f39c12;
+}
+
+.footer-links li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #f39c12;
+}
+
+.footer-section p {
+    margin-top: 20px;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px; 
+    }
+
+    .nav-links {
+        display: flex; 
+        margin-left: auto; 
+
+    .nav-links li {
+        margin: 0 5px; 
+    }
+
+    .signin-btn {
+        margin-left: 5px; 
+    }
+
+    .logo{
+        margin-right: auto;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
 }
