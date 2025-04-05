@@ -231,6 +231,11 @@ button {
 
 
 @media (max-width: 768px) {
+     .info {
+        width: 100%;
+        padding: 20px;
+    }
+
     .header {
         padding: 10px 10px;
     }
